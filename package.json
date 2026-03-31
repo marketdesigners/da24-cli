@@ -1,0 +1,20 @@
+{
+  "name": "da24",
+  "version": "0.1.0",
+  "description": "다이사 이사 견적 계산 및 접수 CLI — Claude Code slash command 플러그인",
+  "bin": {
+    "da24": "./bin/da24.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "inquirer": "9.2.12"
+  },
+  "keywords": ["da24", "이사", "견적", "mcp", "claude"],
+  "license": "MIT"
+}
