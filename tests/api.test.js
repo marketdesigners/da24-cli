@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import { test, mock } from 'node:test';
+import { test } from 'node:test';
 import { callEstimate, callInquiry } from '../lib/api.js';
 
 test('callEstimate - 성공 응답에서 instruction 필드 제거', async (t) => {
