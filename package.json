@@ -9,6 +9,12 @@
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "skills/",
+    "README.md"
+  ],
   "scripts": {
     "test": "node --test tests/*.test.js"
   },
@@ -16,5 +22,10 @@
     "inquirer": "9.2.12"
   },
   "keywords": ["da24", "이사", "견적", "mcp", "claude"],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "marketdesigners",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marketdesigners/da24-cli"
+  }
 }
