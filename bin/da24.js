@@ -1,21 +1,24 @@
 #!/usr/bin/env node
-import { init } from '../lib/init.js';
-import { estimate } from '../lib/estimate.js';
-import { inquiry } from '../lib/inquiry.js';
 
 const command = process.argv[2];
 
 try {
   switch (command) {
-    case 'init':
+    case 'init': {
+      const { init } = await import('../lib/init.js');
       await init();
       break;
-    case 'estimate':
+    }
+    case 'estimate': {
+      const { estimate } = await import('../lib/estimate.js');
       await estimate();
       break;
-    case 'inquiry':
+    }
+    case 'inquiry': {
+      const { inquiry } = await import('../lib/inquiry.js');
       await inquiry();
       break;
+    }
     default:
       console.log(`
 다이사 CLI — 이사 견적 계산 및 접수
