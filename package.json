@@ -1,6 +1,6 @@
 {
   "name": "da24-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "다이사 이사 견적 계산 및 접수 CLI — Claude Code slash command 플러그인",
   "bin": {
     "da24": "./bin/da24.js",
@@ -15,6 +15,7 @@
     "lib/",
     "skills/",
     "commands/",
+    "assets/",
     "README.md"
   ],
   "scripts": {
